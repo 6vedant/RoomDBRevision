@@ -88,5 +88,4 @@ dependencies {
     androidTestImplementation("androidx.arch.core:core-testing:$coreTestingVersion")
 
     androidTestImplementation("androidx.test.ext:junit:$androidxJunitVersion")
-
 }

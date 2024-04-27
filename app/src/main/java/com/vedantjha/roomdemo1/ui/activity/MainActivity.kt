@@ -16,6 +16,8 @@ import com.vedantjha.roomdemo1.WordListAdapter
 import com.vedantjha.roomdemo1.viewmodel.WordViewModel
 import com.vedantjha.roomdemo1.viewmodel.WordViewModelFactory
 import com.vedantjha.roomdemo1.WordsApplication
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class MainActivity : AppCompatActivity() {
     private val newWordActivityRequestCode = 1

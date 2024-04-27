@@ -3,8 +3,10 @@ package com.vedantjha.roomdemo1
 import android.app.Application
 import com.vedantjha.roomdemo1.data.WordRepository
 import com.vedantjha.roomdemo1.data.WordRoomDatabase
+import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
+
 
 class WordsApplication : Application() {
     val applicationScope = CoroutineScope(SupervisorJob())

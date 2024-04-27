@@ -7,10 +7,12 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.vedantjha.roomdemo1.data.Word
 import com.vedantjha.roomdemo1.data.WordRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import java.lang.IllegalArgumentException
+import javax.inject.Inject
 
-class WordViewModel(private val wordRepository: WordRepository) : ViewModel() {
+class WordViewModel (private val wordRepository: WordRepository) : ViewModel() {
     val allWords: LiveData<List<Word>> = wordRepository.allWords.asLiveData()
 
     fun insert(word: Word) {
